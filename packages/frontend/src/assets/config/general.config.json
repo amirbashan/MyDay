@@ -1,0 +1,13 @@
+{
+  "server": {
+    "protocol": "http",
+    "baseUrl": "localhost",
+    "port": 3000,
+    "version": "v1.0.0"
+  },
+  "clock": {
+    "timeZone": "Asia/Jerusalem",
+    "clockRefresh": 1000
+  },
+  "connectedUser": "Amir"
+}

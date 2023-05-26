@@ -11,13 +11,11 @@
   "scripts": {
     "initialize": "npm install && npm run clean && lerna bootstrap",
     "dev": "lerna run dev",
-    "new-version": "lerna version --conventional-commits --yes",
     "build": "lerna run build",
-    "test": "lerna run test",
     "clean": "lerna clean --yes",
     "refresh": "lerna bootstrap",
-    "lint": "lerna run lint",
-    "coverage-report": "lerna run coverage"
+    "new-version": "lerna version --conventional-commits --yes",
+    "lint": "lerna run lint"
   },
   "devDependencies": {
     "lerna": "^6.0.3",
