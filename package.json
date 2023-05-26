@@ -14,7 +14,6 @@
     "new-version": "lerna version --conventional-commits --yes",
     "build": "lerna run build",
     "test": "lerna run test",
-    "diff": "lerna diff",
     "clean": "lerna clean --yes",
     "refresh": "lerna bootstrap",
     "lint": "lerna run lint",
