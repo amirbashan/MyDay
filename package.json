@@ -1,0 +1,27 @@
+{
+  "name": "myday",
+  "private": true,
+  "author": "Amir Bashan",
+  "engines": {
+    "node": "16.x"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "initialize": "npm install && npm run clean && lerna bootstrap",
+    "dev": "lerna run dev",
+    "new-version": "lerna version --conventional-commits --yes",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "diff": "lerna diff",
+    "clean": "lerna clean --yes",
+    "refresh": "lerna bootstrap",
+    "lint": "lerna run lint",
+    "coverage-report": "lerna run coverage"
+  },
+  "devDependencies": {
+    "lerna": "^6.0.3",
+    "prettier": "2.8.3"
+  }
+}
