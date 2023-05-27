@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "@myday/frontend",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -14,11 +14,17 @@
     "verbose": true
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.2",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "^20.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

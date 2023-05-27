@@ -2,7 +2,7 @@
 import Axios from 'axios';
 import general from './assets/config/general.config.json';
 import mainIcons from './assets/config/mainIcons.json';
-import DefaultImg from '../src/assets/icons/mainIcons/Default.svg';
+import DefaultImg from '../src/assets/icons/Default.svg';
 
 const configPath = `config/`;
 

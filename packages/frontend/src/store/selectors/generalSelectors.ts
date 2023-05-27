@@ -1,3 +1,13 @@
 import { RootState } from '../store';
+import { createSelector } from '@reduxjs/toolkit';
 
-export const generalSelector = (state: RootState) => state.general;
+const generalSelector = (state: RootState) => state.general;
+
+const dialogsSelector = createSelector(
+  [generalSelector],
+  (generalSelector) => generalSelector.dialogs
+);
+export const isSidebarSelector = createSelector(
+  [dialogsSelector],
+  (dialogsSelector): boolean => dialogsSelector.isSidebarOpen
+);

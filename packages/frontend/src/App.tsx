@@ -4,12 +4,18 @@ import config from './config';
 
 import './App.css';
 import { updateFromConfiguration } from './store/slices/generalSlice';
+import SideBar from './components/sideBar/SideBar';
 
 function App() {
   useEffect(() => {
     store.dispatch(updateFromConfiguration(config.general));
   }, []);
-  return <div>app</div>;
+  return (
+    <div>
+      <SideBar />
+      <div>app</div>
+    </div>
+  );
 }
 
 export default App;

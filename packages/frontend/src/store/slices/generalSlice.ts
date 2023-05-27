@@ -3,10 +3,16 @@ import config, { GeneralConfig } from '../../config';
 
 interface IGeneralStore {
   connectedUser: string;
+  dialogs: {
+    isSidebarOpen: boolean;
+  };
 }
 
 const initialState: IGeneralStore = {
-  connectedUser: config.general.connectedUser
+  connectedUser: config.general.connectedUser,
+  dialogs: {
+    isSidebarOpen: true
+  }
 };
 
 const generalSlice = createSlice({
@@ -15,10 +21,16 @@ const generalSlice = createSlice({
   reducers: {
     updateFromConfiguration(state, action: PayloadAction<GeneralConfig>) {
       state.connectedUser = action.payload.connectedUser;
+    },
+    openSidebar(state) {
+      state.dialogs.isSidebarOpen = true;
+    },
+    closeSidebar(state) {
+      state.dialogs.isSidebarOpen = false;
     }
   },
   extraReducers: {}
 });
 
-export const { updateFromConfiguration } = generalSlice.actions;
+export const { updateFromConfiguration, openSidebar, closeSidebar } = generalSlice.actions;
 export default generalSlice.reducer;
